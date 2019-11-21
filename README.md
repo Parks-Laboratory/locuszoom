@@ -14,3 +14,8 @@ Our system is in attie-vm:
 
 just go the example and use the Python script for analysis.
 If change the path, go to conf folder and change the configure file.
+
+to update mm10 to .db:
+bin/lzupdate.py --build mm10 
+
+
