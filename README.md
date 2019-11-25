@@ -27,12 +27,19 @@ To run LocusZoom:
    $ sudo su
    $ ---password
    $ cd /mnt/data/locuszoom/examples
-(2)  upload gwas file to this folder
+(2) conduct shell to setup path for tabix for LD calculation 
+   ./export.sh  
+
+(3) upload gwas file to this folder
    this text file must have two columns,   MarkerName and P-value (column name should be exactly these two)
-(3) edit python file to perform locuszoom
+(4) edit python file to perform locuszoom
    to calculate LD, using mouse_vcf.py to do it
+   
    change   --refsnp  to your snp  and change --flank   to 200kb or 500kb as needed
-(4)  conduct  ./mouse_vcf.py to draw plots
+   
+(5)  conduct  ./mouse_vcf.py to draw plots
+
+   ./mouse_vcf.py
 
 
    
