@@ -18,4 +18,23 @@ If change the path, go to conf folder and change the configure file.
 to update mm10 to .db:
 bin/lzupdate.py --build mm10 
 
+using conf/m2z.config file to change your configuration
+
+To run LocusZoom:
+
+(1) cd  to  examples
+   in Attie-VM  using adminstor account
+   $ sudo su
+   $ ---password
+   $ cd /mnt/data/locuszoom/examples
+(2)  upload gwas file to this folder
+   this text file must have two columns,   MarkerName and P-value (column name should be exactly these two)
+(3) edit python file to perform locuszoom
+   to calculate LD, using mouse_vcf.py to do it
+   change   --refsnp  to your snp  and change --flank   to 200kb or 500kb as needed
+(4)  conduct  ./mouse_vcf.py to draw plots
+
+
+   
+
 
