@@ -28,10 +28,12 @@ To run LocusZoom:
    $ ---password
    $ cd /mnt/data/locuszoom/examples
 (2) conduct shell to setup path for tabix for LD calculation 
-   ./export.sh  
+   export PATH=$PATH:/mnt/data/locuszoom/tabix-0.2.6
 
 (3) upload gwas file to this folder
+
    this text file must have two columns,   MarkerName and P-value (column name should be exactly these two)
+   
 (4) edit python file to perform locuszoom
    to calculate LD, using mouse_vcf.py to do it
    
