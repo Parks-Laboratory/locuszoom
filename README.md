@@ -21,41 +21,41 @@ bin/lzupdate.py --build mm10
 using conf/m2z.config file to change your configuration
 
 To run LocusZoom in remote server:
-(1) cd  to  examples
+1. cd  to  examples
    in Attie-VM  using adminstor account
    $ sudo su
    $ ---password
    $ cd /mnt/data/locuszoom/examples
-(2) conduct shell to setup path for tabix for LD calculation 
+2. conduct shell to setup path for tabix for LD calculation 
       export PATH=$PATH:/mnt/data/locuszoom/tabix-0.2.6
-(3) upload gwas file to this folder
+3. upload gwas file to this folder
    this text file must have two columns,   MarkerName and P-value (column name should be exactly these two)   
-(4) edit python file to perform locuszoom
+4. edit python file to perform locuszoom
    to calculate LD, using mouse_vcf.py to do it   
    change   --refsnp  to your snp  and change --flank   to 200kb or 500kb as needed
    
-(5)  conduct  ./mouse_vcf.py to draw plots
+5. conduct  ./mouse_vcf.py to draw plots
    ./mouse_vcf.py
 
 To run LocusZoom in Parks's lab computer:
 
-(1) using VMware to login into Ubuntu system.
-      username: parks  password:.....  (recommending using root access,  
+1. using VMware to login into Ubuntu system.
+      username: parks  password:.....  (highly recommending using root access) 
          sudo su
-(2) mount sda3 , in terminal: )
+2. mount sda3 , in terminal: 
       /mount -t ext4 /dev/sda3  /mnt/sda3
-(3) go to sda3 and locuszoom
+3. go to sda3 and locuszoom
       cd /mnt/sda3/locuszoom
-(4) change path 
+4. change path 
    export PATH=$PATH:/mnt/sda3/locuszoom/tabix-0.2.6
-(5) go to example folder 
+5. go to example folder 
     cd example  
-(6) upload gwas file to this example directory for your analysis
+6. upload gwas file to this example directory for your analysis
    this text file must have two columns,   
       MarkerName and P-value (column name should be exactly these two, MarkerName and P-value can see example) 
-(7) edit python file to perform locuszoom to calculate LD, using mouse_vcf.py  
+7. edit python file to perform locuszoom to calculate LD, using mouse_vcf.py  
    change   --refsnp  to your snp  and change --flank   to 200kb or 500kb as needed
-(8) conduct  ./mouse_vcf.py to draw plots using following code
+8. conduct  ./mouse_vcf.py to draw plots using following code
    ./mouse_vcf.py
    
  warning: python2 is needed, python --version should come back to python 2
