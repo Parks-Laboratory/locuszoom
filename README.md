@@ -55,7 +55,10 @@ To run LocusZoom in Parks's lab computer:
       MarkerName and P-value (column name should be exactly these two, MarkerName and P-value can see example) 
 7. edit python file to perform locuszoom to calculate LD, using mouse_vcf.py  
    change   --refsnp  to your snp  and change --flank   to 200kb or 500kb as needed
-8. conduct  ./mouse_vcf.py to draw plots using following code
+8. go to conf folder
+   rm m2zfast.conf
+   cp mouse.conf m2zfast.conf  (for human, using cp human.conf m2zfast.conf)
+9. conduct  ./mouse_vcf.py to draw plots using following code
    ./mouse_vcf.py
    
 warning: python2 is needed, python --version should come back to python 2
