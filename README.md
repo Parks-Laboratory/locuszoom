@@ -47,7 +47,7 @@ To run LocusZoom in Parks's lab computer:
 3. go to sda3 and locuszoom
       cd /mnt/sda3/locuszoom
 4. change path 
-   export PATH=$PATH:/mnt/sda3/locuszoom/tabix-0.2.6
+   export PATH=$PATH:/mnt/sda3/locuszoom/tabix-0.2.6    Or  go to example using:   ./export.sh
 5. go to example folder 
     cd example  
 6. upload gwas file to this example directory for your analysis
@@ -58,7 +58,7 @@ To run LocusZoom in Parks's lab computer:
 8. conduct  ./mouse_vcf.py to draw plots using following code
    ./mouse_vcf.py
    
- warning: python2 is needed, python --version should come back to python 2
+warning: python2 is needed, python --version should come back to python 2
  
  
 
