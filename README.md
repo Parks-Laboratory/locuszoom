@@ -42,8 +42,8 @@ To run LocusZoom in Parks's lab computer:
 (1) using VMware to login into Ubuntu system.
       username: parks  password:.....  (recommending using root access,  
          sudo su
-(2) mount sda3 , in terminal:
-      mount /dev/sda3  /mnt/sda3
+(2) mount sda3 , in terminal: (just for the first time, if reinstall it)
+      //**mount /dev/sda3  /mnt/sda3**//   (not necessary for now)
 (3) go to sda3 and locuszoom
       cd /mnt/sda3/locuszoom
 (4) change path 
