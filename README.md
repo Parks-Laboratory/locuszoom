@@ -43,7 +43,7 @@ To run LocusZoom in Parks's lab computer:
       username: parks  password:.....  (highly recommending using root access) 
          sudo su
 2. mount sda3 , in terminal: 
-      /mount -t ext4 /dev/sda3  /mnt/sda3
+      mount -t ext4 /dev/sda3  /mnt/sda3
 3. go to sda3 and locuszoom
       cd /mnt/sda3/locuszoom
 4. change path 
